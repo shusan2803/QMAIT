@@ -33,8 +33,8 @@ def user_data_to_csv(code_data: str, code_format: str,source: str = "web_camera"
         writer.writerow([
             next_number,
             datetime.now(timezone.utc).isoformat(),
-            code_data,
             code_format,
+            code_data,
             source
         ])
 
