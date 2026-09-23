@@ -79,6 +79,13 @@
     });
   }
 
+  // Check for HTTPS/Secure context before attempting to access the camera
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+    statusCard.textContent = "Camera blocked: Web browsers require an HTTPS (secure) connection to access the camera.";
+    statusCard.style.color = "#d9534f";
+    return;
+  }
+
   // 4. Send detected code data to Flask
   async function logToServer(decodedData, formatType) {
     statusCard.textContent = `Saving [${formatType}]: ${decodedData}...`;
@@ -106,13 +113,14 @@
   }
 
   // 5. Start camera stream
-  try {
+try {
     const stream = await navigator.mediaDevices.getUserMedia({
       video: { facingMode: "environment" },
       audio: false
     });
     video.srcObject = stream;
     statusCard.textContent = "Point camera at a Barcode or QR Code...";
+    // ... continue scanning
     
     if (useNativeDetector) {
       requestAnimationFrame(scanNativeLoop);
