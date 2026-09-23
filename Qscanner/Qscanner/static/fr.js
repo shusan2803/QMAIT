@@ -108,7 +108,7 @@
     } catch (err) {
       statusCard.textContent = "Network error: Failed to reach server.";
     } finally {
-      setTimeout(() => { isScanningLocked = false; }, 3000);
+      setTimeout(() => { isScanningLocked = false; }, 6000);
     }
   }
 
