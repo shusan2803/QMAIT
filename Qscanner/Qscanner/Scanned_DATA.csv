@@ -1,6 +1,6 @@
 Serial Number,Timestamp (UTC),Code_Type,Data,Source
-1,2026-09-23T16:04:52.094803+00:00,4005900294517,ean_13,native_api
-2,2026-09-23T16:04:58.544308+00:00,https://tech-xtract-s-smart-icards.vercel.app/Members/TXT_GP_02_Taanush.html,qr_code,native_api
-3,2026-09-23T16:05:02.770935+00:00,https://tech-xtract-s-smart-icards.vercel.app/Members/TXT_GP_02_Taanush.html,qr_code,native_api4,2026-09-23T16:34:36.497211+00:00,8901088050586,ean_13,native_api
-4,2026-09-23T16:34:41.822044+00:00,8901030544286,ean_13,native_api
-5,2026-09-23T16:34:52.781341+00:00,6085010044576,ean_13,native_api
+1,2026-09-23T16:04:52.094803+00:00,ean_13,,4005900294517native_api
+2,2026-09-23T16:04:58.544308+00:00,qr_code,https://tech-xtract-s-smart-icards.vercel.app/Members/TXT_GP_02_Taanush.html,native_api
+3,2026-09-23T16:05:02.770935+00:00,qr_code,,https://tech-xtract-s-smart-icards.vercel.app/Members/TXT_GP_02_Taanush.html,native_api
+4,2026-09-23T16:34:41.822044+00:00,ean_13,8901030544286,native_api
+5,2026-09-23T16:34:52.781341+00:00,ean_13,6085010044576,native_api
