@@ -74,4 +74,5 @@ def save_code():
 if __name__ == "__main__":
     os.makedirs(STATIC_DIR, exist_ok=True)
     # Use port 5000 (port 500 is restricted)
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    #Here i the part where the IP of the is defined for thhe website that javascript use.
+    app.run(host="0.0.0.0", port=5000, debug=True, ssl_context='adhoc')
