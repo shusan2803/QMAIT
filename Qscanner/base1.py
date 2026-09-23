@@ -72,4 +72,5 @@ def save_qr():
 if __name__ == "__main__":
     os.makedirs(STATIC_DIR, exist_ok=True)
     # Use port 5000 (port 500 is restricted)
+#Development based IP,for actual purpose use server or device ip that going to run this python file or also make production IP address using WWVM
     app.run(host="127.0.0.1", port=5000, debug=True)
